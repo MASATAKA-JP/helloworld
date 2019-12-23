@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="container">
+      <p>クッキーAにセットする値：
+        <button onclick="setCookie('cookieA-name', 'リンゴ', 1)">リンゴ</button>
+        <button onclick="setCookie('cookieA-name', 'バナナ', 1)">バナナ</button>
+      </p>
+      <p>クッキーBにセットする値：
+        <button onclick="setCookie('cookieB-name', 'サッカー', 1)">サッカー</button>
+        <button onclick="setCookie('cookieB-name', '野球', 1)">野球</button>
+      </p>
+      <p>削除：
+        <button onclick="deleteCookie('cookieA-name')">クッキーA</button>
+        <button onclick="deleteCookie('cokieB-name')">クッキーB</button>
+      </p>
+      <p>
+        <button onclick="displayCookie('cookieA-name', 'cookieA-output');displayCookie('cookieB-name', 'cookieB-output');">クッキーの値を表示</button>
+      </p>
+      <p>
+        クッキーAの値: <span id="cookieA-output"></span>
+      </p>
+      <p>
+        クッキーBの値: <span id="cookieB-output"></span>
+      </p>
+    </div>
+
+
+
+
+
+
+
+
+    <!--jsのリンク-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+    </script>
+    <script src="template.js">
+
+    </script>
+  </body>
+</html>
