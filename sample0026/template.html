@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="container mt-3">
+      <form name="Form1" action="#" method="post">
+        <p>パソコン所有台数</p>
+        <input type="radio" name="number" value="持っていない" id="radio-0" checkde onClick="changeDisabled()"> <label for="radio-0">持っていない</label>&nbsp;
+        <input type="radio" name="number" value="1台" id="radio-1" onClick="changeDisabled()"> <label for="radio-1">1台</label>&nbsp;
+        <input type="radio" name="number" value="２台" id="radio-2" onClick="changeDisabled()"> <label for="radio-2">2台</label>&nbsp;
+        <input type="radio" name="number" value="その他" id="radio-other" onClick="changeDisabled()"> <label for="radio-other">その他</label>&nbsp;
+        <p style="display:inline;"> <input type="text" name="inputNumber" size="2">台 </p>
+      </form>
+    </div>
+
+
+
+
+
+
+
+
+    <!--jsのリンク-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+    </script>
+    <script src="template.js">
+
+    </script>
+  </body>
+</html>
