@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="container mt-3">
+      <div id="wrapSampleForm">
+        <form id="sampleForm">
+          [入力欄]
+          <br>
+          名前： <input type="text" name="formName" value="太郎">
+          <br>
+          地域：
+            <select name="formArea">
+              <option selected>関東</option>
+              <option>東海</option>
+              <option>関西</option>
+            </select>
+          <br>
+          年齢：
+            <select name="formAge">
+              <option selected>10代</option>
+              <option>20代</option>
+              <option>30代</option>
+            </select>
+          <br>
+          コメント： <textarea name="formComent">コメント</textarea>
+        </form>
+      <button onclick="appendToTable()">追加</button>
+      </div>
+      <br>
+      <table id="sampleTable" class="table table-border">
+        <tr>
+          <th id="tableName">名前</th>
+          <th id="tableArea">地域</th>
+          <th id="tableAge">年齢</th>
+          <th id="tableComent">コメント</th>
+        </tr>
+      </table>
+    </div>
+
+
+
+
+
+
+
+
+    <!--jsのリンク-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+    </script>
+    <script src="template.js">
+
+    </script>
+  </body>
+</html>
