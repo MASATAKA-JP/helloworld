@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+    #dropSampleA,
+    #dropSampleB {
+        float: left;
+        width: 280px;
+        min-height: 181px;
+        padding: 10px;
+        border: 1px solid gray;
+        list-style-position: inside;
+    }
+    #dropSampleA {
+        background-color: red;
+    }
+    #dropSampleB {
+        background-color: blue;
+    }
+    #dragSampleA,
+    #dragSampleB,
+    #dragSampleC {
+        width: 258px;
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid gray;
+        text-align: left;
+    }
+    #dragSampleA {
+        background-color: pink;
+    }
+    #dragSampleB {
+        background-color: lightblue;
+    }
+    #dragSampleC {
+        background-color: lightgreen;
+    }
+    </style>
+  </head>
+  <body>
+
+
+    <div class="container mt-3">
+      <ol id="dropSampleA" ondrop="sampleDrop(event, this); sampleChangeBackgroundColor(this, 'red');" ondragover="sampleAllowDrop(event); sampleChangeBackgroundColor(this, 'yellow');" ondragleave="sampleChangeBackgroundColor(this, 'red');">
+        <li id="dragSampleA" draggable="true" ondragstart="sampleDrag(event);">
+          リスト項目A
+        </li>
+        <li id="dragSampleB" draggable="true" ondragstart="sampleDrag(event);">
+          リスト項目B
+        </li>
+        <li id="dragSampleC" draggable="true" ondragstart="sampleDrag(event);">
+          リスト項目C
+        </li>
+      </ol>
+      <ol id="dropSampleB" ondrop="sampleDrop(event, this); sampleChangeBackgroundColor(this, 'blue');" ondragover="sampleAllowDrop(event); sampleChangeBackgroundColor(this, 'yellow');" ondragleave="sampleChangeBackgroundColor(this, 'blue');">
+
+      </ol>
+      <div style="clear: both;">
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <!--jsのリンク-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+    </script>
+    <script src="template.js">
+
+    </script>
+  </body>
+</html>
