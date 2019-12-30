@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+
+    <div id="demo" class="container mt-3">
+      <p class="title">zipcode to address demo</p>
+      <input v-model="inputZip" :placeholder="computedZip" v-on:keypress.enter="getAddress(computedZip)" maxlength="7">
+      <button @click="getAddress(computedZip)">boom</button>
+      <div class="result">
+        <transition name="trans">
+          <p class="res" :key="results">{{results}}</p>
+        </transition>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <!--jsのリンク-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+    </script>
+    <script src="template.js">
+
+    </script>
+  </body>
+</html>
